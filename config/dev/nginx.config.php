@@ -6,7 +6,7 @@
 return [
     'listen' => '80',
     'serverNames' => [
-        USER . '.photoems.com',
+        USER . '.quiz.com',
     ],
     'fastcgi' => 'unix:/var/run/php5-fpm.sock',
 ];

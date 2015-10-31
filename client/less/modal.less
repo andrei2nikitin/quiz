@@ -1,0 +1,116 @@
+@import "mixins.less";
+
+.modal {
+    color: #383737;
+    font-size: 20px;
+    font-family: "PFBeauSansPro-Regular", sans-serif;
+    border-radius: 5px;
+    display: none;
+    background: #fff;
+    z-index: 20;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    &-close {
+        font-size: 28px;
+        position: absolute;
+        right: 12px;
+        top: 13px;
+        cursor: pointer;
+        color: #c6c6c6;
+        line-height: 17px;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+}
+
+.form {
+    width: 420px;
+    margin: 0 auto;
+    text-align: center;
+
+    &-title {
+        margin: 50px 0 28px;
+        line-height: 28px;
+    }
+
+    &-input {
+        font-family: "PFBeauSansPro-Light", sans-serif;
+        color: #383737;
+        width: 300px;
+        padding: 0 20px;
+        border-radius: 10px;
+        border: 1px solid #c9c9c9;
+        font-size: 20px;
+        line-height: 45px;
+        outline: none;
+        margin: 0 0 20px;
+
+        &:focus {
+            border: 1px solid #40abff;
+        }
+
+        &.error {
+            border: 1px solid #ce2c04;
+        }
+    }
+
+    &-submit {
+        color: #fff;
+        font-family: "PFBeauSansPro-Regular", sans-serif;
+        font-size: 20px;
+        margin: 9px 0 0;
+    }
+
+    &-error {
+        display: none;
+        position: absolute;
+        bottom: 122px;
+        text-align: center;
+        width: 420px;
+        font-size: 14px;
+        color: #F75C5C;
+    }
+}
+
+.modal-form-wrap {
+    width: 544px;
+    height: 460px;
+}
+
+.modal-done {
+    &-wrap {
+        width: 365px;
+        height: 307px;
+    }
+
+    &-content {
+        color: #383737;
+        font-size: 20px;
+        background: url(../images/modal-ok-icon.jpg) no-repeat 51px 60px;
+        width: 225px;
+        padding: 200px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 10;
+    opacity: .6;
+}

@@ -1,0 +1,80 @@
+@import "colors.less";
+
+body {
+    background: url(/static/img/noise.png) #ff7224;
+    color: #333;
+    height: 100%;
+}
+
+.page {
+    height: 100%;
+    width: 990px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+.header {
+
+}
+
+.logo {
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'boblic';
+    text-align: center;
+    font-size: 48px;
+    color: @colorDarker;
+    text-transform: uppercase;
+    margin: 30px 0 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.disclaimer {
+    text-align: center;
+    font-size: 22px;
+    width: 630px;
+    margin: 0 auto 20px;
+    font-family: 'arimoregular';
+    line-height: 24px;
+}
+
+.warn {
+    font-size: 12px;
+    font-family: Tahoma,Arial,sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quiz {
+    &__button {
+        &__wrap {
+            text-align: center;
+        }
+
+        font-style: normal;
+        font-weight: bold;
+        font-family: 'boblic';
+        text-decoration: none;
+        font-size: 34px;
+        color: @colorDarker;
+        display: inline-block;
+        background-image: url(/static/img/black-linen.png), linear-gradient(to bottom, @colorLight 0%, @colorNeutral 50%, @colorLight 100%);
+        margin: 10px;
+        border-radius: 60px;
+        border: 12px solid #ccc;
+        padding: 22px 34px 17px;
+        text-transform: uppercase;
+        text-shadow: 0 0 2px #ffa877;
+        width: 400px;
+
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}

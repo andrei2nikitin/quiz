@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: 'zopacyr';
+    src: url('zopa.eot');
+    src: url('zopa.eot?#iefix') format('embedded-opentype'),
+         url('zopa.woff') format('woff'),
+         url('zopa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

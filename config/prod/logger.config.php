@@ -10,7 +10,7 @@ return [
     'handlers' => [
         'uberlog' => [
             'level'             => Logger::INFO,
-            'source_program'    => 'photoems',
+            'source_program'    => 'quiz',
             'source_host'       => MESOS_HOST ?: APPLICATION_SERVER,
             'formatter'         => LogstashFormatter::class,
         ],
