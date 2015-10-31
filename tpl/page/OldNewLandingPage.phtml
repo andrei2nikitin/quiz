@@ -1,0 +1,28 @@
+<?php
+/**
+ * @author Andrey Mostovoy <stalk.4.me@gmail.com>
+ * @var stdClass $PageData данные для страницы.
+ */
+?>
+<div class="MainLandingPage">
+    <div class="header">
+        <h1 class="old-new-header-title">Специально к Новому Году!</h1>
+        <p class="old-new-header-text">Теперь вы можете не только менять размер картинок, но также и применять к ним
+            фильтры!
+            Загрузите фото и все увидите ;)</p>
+    </div>
+    <div class="content">
+        <div class="column left">
+            <div class="sbn left js-sbn-left"><!-- left sbn --></div>
+        </div>
+        <div class="column middle">
+            <? include 'imageProcessingWidget.phtml' ?>
+        </div>
+        <div class="column right">
+            <div class="sbn right js-sbn-right"><!-- right sbn --></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="sbn bottom js-sbn-bottom"><!-- bottom sbn --></div>
+    </div>
+</div>
